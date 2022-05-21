@@ -1,3 +1,6 @@
+import "./_style.scss";
+import replySrc from "../../images/icon-reply.svg";
+import profileImage from "../../utilities/ProfileImage";
 type Image = {
   png: string;
   webp: string;
@@ -23,19 +26,37 @@ type CommentProps = {
 export default function Comment(props: CommentProps) {
   return (
     <div className="comment">
-      <div className="comment__rating"></div>
-      <div className="comment__user">
-        <div className="comment__user__image">
-          <img src={props.user.image.png} />
-        </div>
-        <span className="comemnt__user__name">{props.user.username}</span>
+      <div className="comment__rating">
+        <button></button>
       </div>
-      <span className="comment__time">{props.createdAt}</span>
+      <div className="comment__content">
+        <div className="comment__content__header">
+          <div className="comment__content__header__user">
+            <div className="comment__content__header__user__image">
+              <img
+                src={profileImage(props.user.username)}
+                alt={props.user.username}
+              />
+            </div>
+            <span className="comment__content__header__user__name">
+              {props.user.username}
+            </span>
+          </div>
+          <span className="comment__content__header__time">
+            {props.createdAt}
+          </span>
 
-      <div className="comment__reply__button"></div>
+          <div className="comment__content__header__reply">
+            <button>
+              <img src={replySrc} alt="replybtn" />
+              <span>Reply</span>
+            </button>
+          </div>
+        </div>
 
-      <div className="comment_message">
-        <p>{props.content}</p>
+        <div className="comment__content__message">
+          <p>{props.content}</p>
+        </div>
       </div>
     </div>
   );
