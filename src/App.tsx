@@ -8,9 +8,7 @@ function App() {
   return (
     <div className="container">
       {data.comments.map((value, index) => {
-        if (index === 0) {
-          return <Comment {...value} key={value.id} />;
-        }
+        return <Comment {...value} key={value.id} />;
       })}
     </div>
   );
