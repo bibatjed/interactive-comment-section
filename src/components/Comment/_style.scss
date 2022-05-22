@@ -12,7 +12,7 @@
         left: -30px;
         top: -1px;
     }
-    &:nth-last-child(1)::before {
+    &:last-child::before {
         height: 100%;
     }
 }
