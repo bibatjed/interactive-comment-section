@@ -1,7 +1,22 @@
 @import '../../variables.scss';
 .reply {
+    position: relative;
     margin-left: 150px;
+    gap: 1px;
+    &::before{
+        content: '';
+        background-color: $color-light-gray;
+        width: 1px;
+        height: 112%;
+        position: absolute;
+        left: -30px;
+        top: -1px;
+    }
+    &:nth-last-child(1)::before {
+        height: 100%;
+    }
 }
+
 .comment {
     background-color: $color-white;
     border-radius: 10px;
@@ -12,6 +27,7 @@
 
     &__rating {
         width: 12%;
+        max-width: 40px;
         height: 6rem;
         display: flex;
         align-items: center;
