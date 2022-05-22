@@ -1,6 +1,7 @@
 import "./_style.scss";
 import replySrc from "../../images/icon-reply.svg";
 import profileImage from "../../utilities/ProfileImage";
+import Rating from "../Rating";
 type Image = {
   png: string;
   webp: string;
@@ -27,7 +28,7 @@ export default function Comment(props: CommentProps) {
   return (
     <div className="comment">
       <div className="comment__rating">
-        <button></button>
+        <Rating score={props.score} />
       </div>
       <div className="comment__content">
         <div className="comment__content__header">
