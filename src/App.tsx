@@ -1,4 +1,4 @@
-import React, { SetStateAction, useState } from "react";
+import React, { useState } from "react";
 import Comment from "./components/Comment";
 import CommentInput from "./components/CommentInput";
 import "./App.scss";
