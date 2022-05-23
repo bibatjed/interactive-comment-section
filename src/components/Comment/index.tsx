@@ -2,14 +2,9 @@ import "./_style.scss";
 import replySrc from "../../images/icon-reply.svg";
 import profileImage from "../../utilities/ProfileImage";
 import Rating from "../Rating";
-type Image = {
-  png: string;
-  webp: string;
-};
 
 type User = {
   username: string;
-  image: Image;
 };
 
 interface Replies extends CommentProps {
