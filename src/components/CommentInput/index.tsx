@@ -14,6 +14,7 @@ export default function CommentInput(props: CommentInputPropsMethod) {
     e.preventDefault();
     if (comment) {
       props.onSubmit(comment);
+      setComment("");
     }
   };
   return (
