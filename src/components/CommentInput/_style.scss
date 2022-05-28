@@ -7,6 +7,7 @@
     gap: 20px;
     align-content: flex-start;
     width: 35%;
+    margin-bottom: 10px;
 
     &__img {
         width: 35px;
@@ -27,6 +28,7 @@
             text-align: start;
             flex-shrink: 0;
             resize: none;
+            color:gray;
             font-family: 'Rubik', sans-serif;
         }
 
