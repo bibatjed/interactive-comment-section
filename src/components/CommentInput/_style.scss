@@ -46,3 +46,16 @@
         }
     }
 }
+
+@media(max-width: 375px){
+    .comment__input {
+        width: 80%;
+        padding: 20px;
+
+        &__form {
+            textarea {
+                width: 70%;
+            }
+        }
+    }
+}

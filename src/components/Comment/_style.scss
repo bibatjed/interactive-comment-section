@@ -97,3 +97,13 @@
     }
 
 }
+
+@media(max-width: 375px){
+    .comment {
+        width: 90%;
+    }
+
+    .reply {
+        margin-left: 10px;
+    }
+}
