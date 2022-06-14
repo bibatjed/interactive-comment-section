@@ -2,7 +2,7 @@ import "./_style.scss";
 import replySrc from "../../images/icon-reply.svg";
 import profileImage from "../../utilities/ProfileImage";
 import Rating from "../Rating";
-
+import { useState } from "react";
 type User = {
   username: string;
 };
