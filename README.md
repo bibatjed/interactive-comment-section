@@ -1,10 +1,3 @@
-# TODO
-
-1. hehesss
-2. sample sample
-3. for sample
-4. git sample
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
